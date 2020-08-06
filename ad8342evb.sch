@@ -1659,8 +1659,7 @@ Connection ~ 4200 7000
 Wire Wire Line
 	4200 7000 4700 7000
 Wire Wire Line
-	5950 5650 5950 7000
-Connection ~ 5950 7000
+	5950 5650 5950 6950
 $Comp
 L Device:C C25
 U 1 1 5FB7E901
@@ -1674,9 +1673,6 @@ F 3 "~" H 4700 7300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4700 7000 4700 7150
-Connection ~ 4700 7000
-Wire Wire Line
-	4700 7000 5950 7000
 Wire Wire Line
 	4700 7450 4700 7650
 Wire Wire Line
@@ -1819,7 +1815,7 @@ Wire Wire Line
 	2150 6450 1850 6450
 Text Label 5200 6000 0    50   ~ 0
 3V3
-Text Label 5150 7000 0    50   ~ 0
+Text Label 4850 6950 0    50   ~ 0
 5V_Switching
 Connection ~ 5100 6000
 Wire Wire Line
@@ -2346,4 +2342,14 @@ Wire Wire Line
 Wire Wire Line
 	3650 7750 3650 6850
 Connection ~ 4200 7650
+Wire Wire Line
+	4200 6400 4550 6400
+Wire Wire Line
+	4550 6400 4550 6950
+Wire Wire Line
+	4550 6950 5950 6950
+Connection ~ 4200 6400
+Connection ~ 5950 6950
+Wire Wire Line
+	5950 6950 5950 7000
 $EndSCHEMATC
