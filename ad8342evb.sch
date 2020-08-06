@@ -148,31 +148,27 @@ Wire Wire Line
 $Comp
 L Device:R R3
 U 1 1 5F19B732
-P 5450 2500
-F 0 "R3" H 5520 2546 50  0000 L CNN
-F 1 "10" H 5520 2455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5380 2500 50  0001 C CNN
-F 3 "~" H 5450 2500 50  0001 C CNN
-	1    5450 2500
+P 5450 2350
+F 0 "R3" H 5520 2396 50  0000 L CNN
+F 1 "10" H 5520 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5380 2350 50  0001 C CNN
+F 3 "~" H 5450 2350 50  0001 C CNN
+	1    5450 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R4
 U 1 1 5F19BCA9
-P 5750 2500
-F 0 "R4" H 5820 2546 50  0000 L CNN
-F 1 "10" H 5820 2455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5680 2500 50  0001 C CNN
-F 3 "~" H 5750 2500 50  0001 C CNN
-	1    5750 2500
+P 5750 2350
+F 0 "R4" H 5820 2396 50  0000 L CNN
+F 1 "10" H 5820 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5680 2350 50  0001 C CNN
+F 3 "~" H 5750 2350 50  0001 C CNN
+	1    5750 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 2650 5450 2800
-Wire Wire Line
 	5450 2800 5850 2800
-Wire Wire Line
-	5750 2650 5750 3100
 $Comp
 L power:+5V #PWR0104
 U 1 1 5F19CD6A
@@ -195,8 +191,6 @@ F 3 "" H 5750 1600 50  0001 C CNN
 	1    5750 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 2150 5750 2350
 Wire Wire Line
 	4100 2600 4100 1950
 $Comp
@@ -1866,8 +1860,6 @@ Wire Wire Line
 	8600 5800 8600 5850
 Wire Wire Line
 	750  6200 750  6650
-Wire Wire Line
-	5450 2350 5450 2150
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J4
 U 1 1 5F697A43
@@ -2352,4 +2344,32 @@ Connection ~ 4200 6400
 Connection ~ 5950 6950
 Wire Wire Line
 	5950 6950 5950 7000
+Wire Wire Line
+	5750 2150 5750 2200
+Wire Wire Line
+	5450 2150 5450 2200
+Wire Wire Line
+	5450 2500 5450 2800
+Wire Wire Line
+	5750 2500 5750 3100
+$Comp
+L Device:R R33
+U 1 1 5F36EBE7
+P 6100 2550
+F 0 "R33" V 6250 2500 50  0000 L CNN
+F 1 "10k" V 6170 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6030 2550 50  0001 C CNN
+F 3 "~" H 6100 2550 50  0001 C CNN
+	1    6100 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 2550 5850 2550
+Wire Wire Line
+	5850 2550 5850 2800
+Connection ~ 5850 2800
+Wire Wire Line
+	6250 2550 6350 2550
+Wire Wire Line
+	6350 2550 6350 2800
 $EndSCHEMATC
